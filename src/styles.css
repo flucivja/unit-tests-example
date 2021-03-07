@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+  width: 500px;
+}
+
+ul li {
+  display: flex;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  margin: 5px 0;
+  word-wrap: break-word;
+  position: relative;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+ul li.newtodo {
+  padding: 0;
+}
+
+ul li .remove {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  background: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+ul li:hover .remove {
+  opacity: 1;
+}
+
+ul li.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+ul li form {
+  display: block;
+  width: 100%;
+}
+
+ul li input {
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 20px;
+  background: none;
+  width: 100%;
+}
+
+ul li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  top: calc(50%-10px);
+}
