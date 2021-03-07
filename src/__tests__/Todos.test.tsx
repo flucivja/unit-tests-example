@@ -1,9 +1,9 @@
 import { fireEvent, render, waitFor, waitForElementToBeRemoved } from "@testing-library/react";
-import { TodoList } from "./TodoList";
-import { fetch } from "../../mock";
-import { Todo } from "../../types";
+import { TodoList } from "../components/todolist/TodoList";
+import { fetch } from "../mock";
+import { Todo } from "../types";
 
-jest.mock("../../mock", () => ({ fetch: jest.fn() }));
+jest.mock("../mock", () => ({ fetch: jest.fn() }));
 
 const mockedFetch = (fetch as unknown) as jest.Mock;
 

@@ -20,6 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test:ci": "react-scripts test --env=jsdom --watchAll=false --collectCoverage",
     "eject": "react-scripts eject"
   },
   "browserslist": [
