@@ -1,6 +1,6 @@
 # Unit testing (coupled vs decoupled unit tests)
 
-This repo is related to my [blog post](https://docs.google.com/document/d/1YuY6n28wgSaQnWrrj6njJmPBnbA6lalh1TJgbQzfY5E/edit?usp=sharing) where I explain differences.
+This repo is related to my [blog post](https://dev.to/flucivja/give-your-code-coverage-sense-or-how-to-write-unit-tests-for-what-matters-43c3) where I explain differences.
 
 Repository contains simple Todos application 
 which purpose is to show difference in unit testing approach.
